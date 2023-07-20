@@ -35,7 +35,7 @@ jobs:
 
       - name: build linux amd64 version
         run: |
-          ls /opt/hostedtoolcache/go/1.20.6/x64/src/AcPopo/go-proxy-bingai/ && go build -ldflags="-s -w" -tags netgo -trimpath -o go-proxy-bingai main.go
+          go build -ldflags="-s -w" -tags netgo -trimpath -o go-proxy-bingai main.go
 
       - name: package linux amd64
         run: tar -zcvf go-proxy-bingai-linux-amd64.tar.gz go-proxy-bingai
