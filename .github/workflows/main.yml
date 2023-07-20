@@ -1,8 +1,6 @@
-name: Build Go-Proxy-BingAI
+name: Build Go-Proxy-BingAI 2
 on:
-  push:
-    tags:
-      - v*
+  workflow_dispatch:
 
 jobs:
   release:
